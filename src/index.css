@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floatShadow {
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: scale(0.85);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+}
+
+.float-shadow {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 80%);
+    animation: floatShadow 6s ease-in-out infinite;
+}

@@ -6,7 +6,7 @@ const ProductImage = () => (
     <div className="relative z-10 float-animation">
       <div className="float-shadow"></div>
       <img
-        src="public/images/Model.png"
+        src="Model.png"
         alt="Model in orange outfit"
         className="w-full h-full object-cover rounded-lg shadow-2xl"
       />
